@@ -238,5 +238,3 @@ with multiprocessing.Pool(4) as pool:
 - **Thread pools** — pre-created threads waiting for work
 
 ---
-
-*Tags: #ComputerScience #OperatingSystems #Concurrency #Processes #Threads*

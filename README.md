@@ -80,5 +80,3 @@ Each topic is documented as a standalone Markdown file with:
 
 **Cleber Zumba de Souza**
 Data Engineer
-
-[LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/cleberzumba)

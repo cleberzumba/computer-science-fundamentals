@@ -179,7 +179,7 @@ def increment():
 ```
 Thread A: holds lock 1, wants lock 2
 Thread B: holds lock 2, wants lock 1
-→ both wait forever 
+→ both wait forever ❌
 ```
 
 **Solution:** acquire locks in the same order, use timeouts.
@@ -208,7 +208,7 @@ import threading
 import multiprocessing
 
 with multiprocessing.Pool(4) as pool:
-    pool.map(heavy_computation, range(4))   # true parallelism 
+    pool.map(heavy_computation, range(4))   # true parallelism ✅
 ```
 
 ---
@@ -226,6 +226,44 @@ with multiprocessing.Pool(4) as pool:
 5. **Modern systems use both.** Browsers, Spark, OS services combine processes (isolation) with threads (concurrency).
 
 6. **Choice depends on workload.** I/O-bound = threads. CPU-bound in Python = processes. Need isolation = processes. Shared state = threads.
+
+---
+
+## Summary
+
+### Process
+
+A **process** is a program in execution with its **own isolated memory**. Each process has its own address space, resources, and file handles. If one crashes, it doesn't affect the others.
+
+> **Example:** when you open Chrome and Spotify, they are **two separate processes**.
+
+---
+
+### Thread
+
+A **thread** is the **smallest unit of execution within a process**. Threads in the same process **share memory**, are lightweight, and communicate directly — but if one crashes, it can take down the entire process.
+
+> **Example:** inside Chrome, multiple threads handle UI, network, and JavaScript simultaneously.
+
+---
+
+### The difference in one sentence
+
+> Processes are **isolated** with their own memory.
+> Threads **share memory** within a process.
+> Processes are heavier but safer; threads are lightweight but require synchronization.
+
+---
+
+### When to use each (interview answer)
+
+> "I use **processes** when I need isolation or CPU-bound work in Python (because of the GIL). I use **threads** when I need shared state or I/O-bound work — like waiting on network or disk."
+
+---
+
+### Bonus — to show depth
+
+> "In Apache Spark, each **executor is a JVM process**, and inside it the **tasks run as threads**. That's why `spark.executor.cores` controls how many parallel tasks each executor processes."
 
 ---
 

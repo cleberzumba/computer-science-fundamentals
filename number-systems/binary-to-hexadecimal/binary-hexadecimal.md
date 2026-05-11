@@ -345,4 +345,3 @@ Conversion between binary and hexadecimal is one of the most elegant in computin
 - Mano, M. M.; Ciletti, M. D. *Digital Design*. 5th edition. Pearson, 2012.
 - Stallings, W. *Computer Organization and Architecture: Designing for Performance*. 10th edition. Pearson, 2016.
 - Knuth, D. E. *The Art of Computer Programming, Volume 2: Seminumerical Algorithms*. 3rd edition. Addison-Wesley, 1997.
-- Repository: `computer-science-fundamentals` — solid fundamentals for building robust systems.

@@ -1,1 +1,1 @@
-![Diagrama de conversão binário para decimal](assets/binary-to-decimal-diagram.jpeg)
+![Binary to decimal conversion diagram](assets/binary-to-decimal-diagram.jpeg)

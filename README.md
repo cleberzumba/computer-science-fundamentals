@@ -40,6 +40,12 @@ A collection of deep-dives and practical notes on the core computer science conc
 - Sorting and searching
 - Big-O notation and complexity analysis
 
+### Number Systems & Data Representation
+- Binary to decimal conversion
+- Decimal to binary conversion
+- Decimal to hexadecimal conversion
+- Binary to hexadecimal conversion
+
 ---
 
 ## Repository structure

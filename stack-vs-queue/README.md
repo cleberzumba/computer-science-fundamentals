@@ -10,7 +10,6 @@
 - [Formal Definitions](#formal-definitions)
 - [Stack — LIFO](#stack--lifo)
 - [Queue — FIFO](#queue--fifo)
-- [Direct Comparison](#direct-comparison)
 - [Computational Complexity](#computational-complexity)
 - [Implementation in Python](#implementation-in-python)
 - [Real-World Applications in Data Engineering](#real-world-applications-in-data-engineering)
@@ -118,20 +117,6 @@ dequeue()   →  returns 2, queue becomes [3]
  └───┴───┴───┘
   back              front
 ```
-
----
-
-## Direct Comparison
-
-| Feature | Stack | Queue |
-|---|---|---|
-| Access policy | LIFO (Last In, First Out) | FIFO (First In, First Out) |
-| Insertion | Top | Back |
-| Removal | Top | Front |
-| Access points | 1 (only the top) | 2 (front and back) |
-| Analogy | Stack of plates | Line at a bank |
-| Insertion operation | `push` | `enqueue` |
-| Removal operation | `pop` | `dequeue` |
 
 ---
 

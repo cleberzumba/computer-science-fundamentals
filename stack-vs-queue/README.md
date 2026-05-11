@@ -10,9 +10,7 @@
 - [Formal Definitions](#formal-definitions)
 - [Stack — LIFO](#stack--lifo)
 - [Queue — FIFO](#queue--fifo)
-- [Computational Complexity](#computational-complexity)
 - [Implementation in Python](#implementation-in-python)
-- [Real-World Applications in Data Engineering](#real-world-applications-in-data-engineering)
 - [Important Variations](#important-variations)
 - [Conclusion](#conclusion)
 
@@ -117,22 +115,6 @@ dequeue()   →  returns 2, queue becomes [3]
  └───┴───┴───┘
   back              front
 ```
-
----
-
-## Computational Complexity
-
-When properly implemented, both structures offer constant-time operations for insertion and removal:
-
-| Operation | Stack | Queue |
-|---|---|---|
-| Insert (`push` / `enqueue`) | O(1) | O(1) |
-| Remove (`pop` / `dequeue`) | O(1) | O(1) |
-| Peek front/top | O(1) | O(1) |
-| Search for middle element | O(n) | O(n) |
-| Index-based access | O(n) | O(n) |
-
-The efficiency of these structures comes precisely from **restricted access**. By limiting where you can insert and remove, we guarantee predictable performance — one of the reasons they appear in so many critical systems.
 
 ---
 
@@ -258,34 +240,6 @@ class Queue:
 
 ---
 
-## Real-World Applications in Data Engineering
-
-### Where Stacks appear
-
-**JVM call stack** — Every thread in a JVM has its own stack where local variables and method calls live. The `-Xss` parameter sets the size of this stack per thread. In Spark executors with many threads (each `spark.executor.cores` creates a task thread), stack sizing matters: stacks that are too small cause `StackOverflowError` on deep recursion; too large wastes memory that could be used by the heap.
-
-**Expression evaluation and parsing** — Compilers and query optimizers — including Spark's Catalyst Optimizer — use stacks to evaluate expression trees. When Spark analyzes `df.filter((col("a") + col("b")) > 10)`, the expression is represented as a tree traversed with stack support.
-
-**Undo / Redo** — Operation history in tools like Databricks notebooks and IDEs.
-
-**Backtracking** — Algorithms like DFS (Depth-First Search) on graphs use a stack (either explicitly or implicitly through recursion).
-
-### Where Queues appear
-
-**Message brokers** — Apache Kafka, RabbitMQ, AWS SQS, and Azure Service Bus are essentially distributed queues. Messages are produced on one end and consumed on the other in arrival order (FIFO), enabling decoupling between producers and consumers in data pipelines.
-
-**Spark Task Scheduling** — Spark's `TaskScheduler` maintains internal queues of pending tasks. When an executor finishes a task, the scheduler pulls the next one from the queue and dispatches it. This is one reason why the number of partitions affects efficiency: too few partitions = short queue = idle executors; too many = scheduling overhead.
-
-**Streaming** — In Spark Structured Streaming, micro-batches are processed in temporal order — classic queue semantics. Systems like Apache Flink and Kafka Streams operate on the same principle.
-
-**Airflow / Databricks Jobs** — Workflow schedulers use queues to manage concurrent executions. When the parallelism limit is reached, new jobs enter a queue until slots become available.
-
-**Graph algorithms** — BFS (Breadth-First Search), used in network analysis, recommendation systems, and community detection, depends on a queue to explore graphs level by level.
-
-**I/O buffers** — Disk and network reads populate internal buffers that work as queues — data arrives in bursts and is consumed by application code in arrival order.
-
----
-
 ## Important Variations
 
 ### Deque (Double-Ended Queue)
@@ -349,4 +303,3 @@ Every time you use Kafka, schedule a task on Spark, run a recursive function, or
 - Sedgewick, R. *Algorithms*, 4th edition — chapters on stacks and queues.
 - Official Python documentation: [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque), [`heapq`](https://docs.python.org/3/library/heapq.html).
 - [Apache Spark internals: Job Scheduling](https://spark.apache.org/docs/latest/job-scheduling.html).
-- Repository: `computer-science-fundamentals` — solid fundamentals for building robust systems.

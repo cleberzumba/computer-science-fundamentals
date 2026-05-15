@@ -46,6 +46,13 @@ A collection of deep-dives and practical notes on the core computer science conc
 - Decimal to hexadecimal conversion
 - Binary to hexadecimal conversion
 
+### Computer Architecture
+- CPU vs GPU
+- Memory hierarchy (registers, cache, RAM, disk)
+- Instruction pipelining
+- SIMD and vector processing
+- Cache coherence
+
 ---
 
 ## Repository structure

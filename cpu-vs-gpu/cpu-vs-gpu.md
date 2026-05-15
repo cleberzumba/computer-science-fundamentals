@@ -8,7 +8,6 @@
 
 The core idea: **CPU optimizes latency** (how fast one task finishes), **GPU optimizes throughput** (how many tasks per second).
 
-Analogy: CPU is a sports car, GPU is a bus.
 
 ## Quick comparison
 

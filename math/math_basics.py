@@ -58,3 +58,29 @@ print(lcm(10, 15))   # 30
 15 % 5     # 0   (15 is divisible by 5)
 7 % 2      # 1   (odd number)
 8 % 2      # 0   (even number)
+
+
+# Prime numbers and divisibility
+#
+# A prime number is a natural number > 1 with only two divisors: 1 and itself.
+# Example: 7 is prime. 8 is not (divisors: 1, 2, 4, 8).
+# A divisor of n is any integer that divides n with remainder 0 (using %).
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(7))    # True
+print(is_prime(8))    # False
+print(is_prime(13))   # True
+
+# Lists all divisors of n by testing integers from 1 to n with the modulo operator.
+def divisors(n):
+    return [i for i in range(1, n + 1) if n % i == 0]
+print(divisors(12))   # [1, 2, 3, 4, 6, 12]
+print(divisors(7))    # [1, 7]
+
+# Optimization: testing up to sqrt(n) is enough — reduces complexity from O(n) to O(sqrt(n)).

@@ -53,6 +53,13 @@ A collection of deep-dives and practical notes on the core computer science conc
 - SIMD and vector processing
 - Cache coherence
 
+- ### Mathematical Foundations
+- Greatest Common Divisor (GCD) and Least Common Multiple (LCM)
+- Recursion fundamentals
+- Arithmetic operators and exponentiation
+- Modular arithmetic
+- Prime numbers and divisibility
+
 ---
 
 ## Repository structure

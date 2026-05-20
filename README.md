@@ -18,48 +18,48 @@ A collection of deep-dives and practical notes on the core computer science conc
 - CPU scheduling
 - Context switching
 - Inter-process communication (IPC)
-
+  
 ### Concurrency & Parallelism
 - Concurrency vs parallelism
 - Locks, mutexes, and semaphores
 - Race conditions and deadlocks
 - Synchronization primitives
 - Thread pools and async patterns
-
+  
 ### Networking
 - TCP/IP fundamentals
 - HTTP/HTTPS lifecycle
 - Sockets and connection handling
 - Load balancing strategies
 - DNS resolution
-
+  
 ### Data Structures & Algorithms
 - Arrays, linked lists, stacks, queues
 - Trees, heaps, hash tables
 - Graphs and traversal algorithms
 - Sorting and searching
 - Big-O notation and complexity analysis
-
-### Number Systems & Data Representation
-- Binary to decimal conversion
-- Decimal to binary conversion
-- Decimal to hexadecimal conversion
-- Binary to hexadecimal conversion
-
-### Computer Architecture
-- CPU vs GPU
-- Memory hierarchy (registers, cache, RAM, disk)
-- Instruction pipelining
-- SIMD and vector processing
-- Cache coherence
-
+  
 ### Mathematical Foundations
 - Greatest Common Divisor (GCD) and Least Common Multiple (LCM)
 - Recursion fundamentals
 - Arithmetic operators and exponentiation
 - Modular arithmetic
 - Prime numbers and divisibility
-
+  
+### Number Systems & Data Representation
+- Binary to decimal conversion
+- Decimal to binary conversion
+- Decimal to hexadecimal conversion
+- Binary to hexadecimal conversion
+  
+### Computer Architecture
+- CPU vs GPU
+- Memory hierarchy (registers, cache, RAM, disk)
+- Instruction pipelining
+- SIMD and vector processing
+- Cache coherence
+  
 ---
 
 ## Repository structure

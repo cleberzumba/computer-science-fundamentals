@@ -12,6 +12,13 @@ A collection of deep-dives and practical notes on the core computer science conc
 
 ## Topics covered
 
+### Programming Languages & Paradigms
+- Compiled vs interpreted languages
+- Static vs dynamic typing
+- Programming paradigms (imperative, functional, object-oriented)
+- Language runtimes and virtual machines
+- Memory management: garbage collection vs manual
+
 ### Operating Systems
 - Processes vs threads
 - Memory management and virtual memory

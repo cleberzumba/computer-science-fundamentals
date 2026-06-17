@@ -62,6 +62,8 @@ A collection of deep-dives and practical notes on the core computer science conc
   
 ### Computer Architecture
 - CPU vs GPU
+- FLOP and computational performance
+- Semiconductor chain (from sand to chip)    
 - Memory hierarchy (registers, cache, RAM, disk)
 - Instruction pipelining
 - SIMD and vector processing
@@ -87,6 +89,11 @@ computer-science-fundamentals/
 └── data-structures-algorithms/
     ├── hash-tables.md
     └── trees.md
+├── computer-architecture/
+│   ├── cpu-vs-gpu.md                       
+│   ├── flop.md                             
+│   ├── from-sand-to-ai.md                  
+
 ```
 
 ---

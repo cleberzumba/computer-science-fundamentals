@@ -75,24 +75,76 @@ A collection of deep-dives and practical notes on the core computer science conc
 
 ```
 computer-science-fundamentals/
+├── programming-languages-paradigms/
+│   ├── compiled-vs-interpreted.md
+│   ├── static-vs-dynamic-typing.md
+│   └── garbage-collection.md
+│
 ├── operating-systems/
 │   ├── processes-vs-threads.md
 │   ├── memory-management.md
-│   └── scheduling.md
+│   ├── cpu-scheduling.md
+│   ├── context-switching.md
+│   └── inter-process-communication.md
+│
 ├── concurrency/
 │   ├── parallelism-vs-concurrency.md
 │   ├── locks-and-mutexes.md
-│   └── deadlocks.md
+│   ├── race-conditions.md
+│   ├── deadlocks.md
+│   └── thread-pools.md
+│
 ├── networking/
 │   ├── tcp-ip-basics.md
-│   └── http-lifecycle.md
-└── data-structures-algorithms/
-    ├── hash-tables.md
-    └── trees.md
-├── computer-architecture/
-│   ├── cpu-vs-gpu.md                       
-│   ├── flop.md                             
-│   ├── from-sand-to-ai.md                  
+│   ├── http-lifecycle.md
+│   ├── sockets.md
+│   ├── load-balancing.md
+│   └── dns-resolution.md
+│
+├── data-structures-algorithms/
+│   ├── data-structures/
+│   │   ├── arrays-lists.md
+│   │   ├── linked-lists.md
+│   │   ├── stack.md
+│   │   ├── queue.md
+│   │   ├── hash-tables.md
+│   │   ├── trees.md
+│   │   ├── heap.md
+│   │   └── graphs.md
+│   └── algorithms/
+│       ├── big-o-notation.md
+│       ├── linear-search.md
+│       ├── binary-search.md
+│       ├── bubble-sort.md
+│       ├── selection-sort.md
+│       ├── insertion-sort.md
+│       ├── merge-sort.md
+│       ├── quick-sort.md
+│       ├── recursion.md
+│       ├── bfs.md
+│       └── dfs.md
+│
+├── math-foundations/
+│   ├── gcd-and-lcm.md
+│   ├── recursion-fundamentals.md
+│   ├── arithmetic-operators.md
+│   ├── modular-arithmetic.md
+│   └── prime-numbers.md
+│
+├── number-systems/
+│   ├── binary-to-decimal.md
+│   ├── decimal-to-binary.md
+│   ├── decimal-to-hexadecimal.md
+│   └── binary-to-hexadecimal.md
+│
+└── computer-architecture/
+    ├── cpu-vs-gpu.md
+    ├── flop.md
+    ├── from-sand-to-ai.md
+    ├── memory-hierarchy.md
+    ├── instruction-pipelining.md
+    ├── simd-vector-processing.md
+    └── cache-coherence.md
 
 ```
 

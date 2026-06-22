@@ -89,7 +89,3 @@ log₂(4,000,000,000) ≈ 31.9  →  ⌈31.9⌉ = 32
 | 128 | 7 | 128 |
 | 256 | 8 | 256 |
 | 4 billion | 32 | 4 billion |
-
----
-
-*Repository: **computer-science-fundamentals**.*

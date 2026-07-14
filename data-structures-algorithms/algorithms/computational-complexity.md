@@ -83,10 +83,6 @@ Computational complexity also **classifies problems** (not just algorithms) into
 - That's why ML uses **approximations** (gradient descent, random forests) instead of optimal solutions
 - Training LLMs involves complex time × memory trade-offs
 
-**International interviews:**
-- Top companies test complexity analysis in almost every technical interview
-- Knowing how to classify problems separates a good candidate from an exceptional one
-
 ---
 
 ## Tools of the field

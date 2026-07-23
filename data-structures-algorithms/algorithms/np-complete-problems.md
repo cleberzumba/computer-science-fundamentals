@@ -182,7 +182,3 @@ Since none has an exact solution in reasonable time for large N, the following a
 - Sipser, M. **Introduction to the Theory of Computation**. 3rd edition. Cengage Learning, 2013.
 - Arora, S.; Barak, B. **Computational Complexity: A Modern Approach**. Cambridge University Press, 2009.
 - Cormen, T. H.; Leiserson, C. E.; Rivest, R. L.; Stein, C. **Introduction to Algorithms**. 4th edition. MIT Press, 2022.
-
----
-
-*Repository: **computer-science-fundamentals** — soli building robust
